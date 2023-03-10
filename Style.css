@@ -1,0 +1,58 @@
+*{
+   
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5256ad;
+}
+
+.icon{
+    background-image: url(https://th.bing.com/th/id/OIP.4EQ_Y8e7pLtE4hTRLut3OwHaFD?pid=ImgDet&rs=1);
+   background-image: image(cloud);
+}
+.drag-area{
+    border:2px dashed #fff;
+    height: 600px;
+    width: 600px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.drag-area.active{
+    border: 2px solid #fff;
+}
+.drag-area .icon{
+    font-size: large;
+    color: #fff;
+}
+
+.drag-area header{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.drag-area span{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+margin: 15px 0 15px 0;
+
+}
+
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #fff;
+}
